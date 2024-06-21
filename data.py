@@ -25,5 +25,3 @@ class IngredientsData:
             "bdaaa73"
         ]
     }
-
-

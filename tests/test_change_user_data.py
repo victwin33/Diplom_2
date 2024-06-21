@@ -38,6 +38,3 @@ class TestChangeUserData:
     def test_change_user_data_without_authorization_fail(self, payload):
         r = requests.patch(APILinks.MAIN_URL + APILinks.USER_URL, data=payload)
         assert r.status_code == 401 and r.json()['message'] == 'You should be authorised'
-
-
-

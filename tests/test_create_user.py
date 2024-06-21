@@ -24,5 +24,3 @@ class TestCreateUser:
         r = requests.post(APILinks.MAIN_URL + APILinks.REGISTER_URL, data=payload)
         assert r.status_code == 403 and r.json()['message'] == "Email, password and name are required fields"
 
-
-
