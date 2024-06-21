@@ -1,4 +1,4 @@
-## Дипломный проект. Задание 2: API
+## Дипломный проект. Задание 2: API 
 Тестирование ручек API сервиса Stellar Burgers https://stellarburgers.nomoreparties.site/
 
 1. Создание пользователя:
@@ -34,3 +34,4 @@ pytest tests --alluredir=allure_results
 ``` shell
 allure serve allure_results
 ```
+ 

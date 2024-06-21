@@ -23,3 +23,4 @@ def create_user_login():
         "password": generate_random_string(6),
         }
     return user_login
+

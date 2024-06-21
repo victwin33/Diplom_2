@@ -26,3 +26,4 @@ class TestCreateOrder:
     def test_create_order_incorrect_hash_fail(self, create_and_delete_user):
         r = requests.post(APILinks.MAIN_URL + APILinks.ORDERS_URL, data=IngredientsData.incorrect_ingredients)
         assert r.status_code == 500 and 'Internal Server Error' in r.text
+

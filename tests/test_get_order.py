@@ -18,3 +18,4 @@ class TestGetOrder:
     def test_get_order_user_without_authorisation_fail(self, create_and_delete_user):
         r = requests.get(APILinks.MAIN_URL + APILinks.ORDERS_URL)
         assert r.status_code == 401 and r.json()['message'] == "You should be authorised"
+
