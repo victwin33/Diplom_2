@@ -25,3 +25,4 @@ class TestCreateUser:
         assert r.status_code == 403 and r.json()['message'] == "Email, password and name are required fields"
 
 
+

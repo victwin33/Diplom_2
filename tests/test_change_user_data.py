@@ -39,3 +39,5 @@ class TestChangeUserData:
         r = requests.patch(APILinks.MAIN_URL + APILinks.USER_URL, data=payload)
         assert r.status_code == 401 and r.json()['message'] == 'You should be authorised'
 
+
+

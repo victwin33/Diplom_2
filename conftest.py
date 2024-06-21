@@ -14,3 +14,4 @@ def create_and_delete_user():
     yield response, payload, login_data, token
     requests.delete(APILinks.MAIN_URL + APILinks.USER_URL, headers={'Authorization': f'{token}'})
 
+

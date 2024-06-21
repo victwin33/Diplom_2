@@ -27,3 +27,4 @@ class TestCreateOrder:
         r = requests.post(APILinks.MAIN_URL + APILinks.ORDERS_URL, data=IngredientsData.incorrect_ingredients)
         assert r.status_code == 500 and 'Internal Server Error' in r.text
 
+
